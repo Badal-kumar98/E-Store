@@ -1,0 +1,118 @@
+.categoryPage-container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.categoryPage-headingContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categoryPage-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.categoryPage-loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryPage-contentSection {
+  padding: 20px;
+}
+
+.categoryPage-productContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.categoryPage-productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.categoryPage-productCard {
+  width: calc(25% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.categoryPage-productCard:hover {
+  transform: scale(1.05);
+}
+
+.categoryPage-cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryPage-productImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.categoryPage-productDetails {
+  padding: 10px;
+  text-align: center;
+}
+
+.categoryPage-productBrand {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.categoryPage-productTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.categoryPage-productPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.categoryPage-addToCartButton {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.categoryPage-addToCartButton:hover {
+  background-color: #d81b60;
+}
+
+.categoryPage-noProductFound {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.categoryPage-noProductImage {
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+.categoryPage-noProductText {
+  font-size: 18px;
+  color: black;
+}

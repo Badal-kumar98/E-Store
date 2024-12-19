@@ -1,0 +1,159 @@
+/* General Styles */
+.updateP-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.updateP-flex-wrapper {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border: 1px solid #dce3e9;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  transition: transform 0.3s ease;
+}
+
+.updateP-flex-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.updateP-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.updateP-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.updateP-heading h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #219ebc;
+  text-transform: uppercase;
+}
+
+.updateP-input-group {
+  margin-bottom: 20px;
+}
+
+.updateP-input,
+.updateP-select,
+.updateP-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dce3e9;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #495057;
+  background-color: #f8fafc;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.updateP-input:focus,
+.updateP-select:focus,
+.updateP-textarea:focus {
+  border-color: #219ebc;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(33, 158, 188, 0.4);
+}
+
+.updateP-button-wrapper {
+  margin-top: 25px;
+}
+
+.updateP-button {
+  width: 100%;
+  height: 50px;
+  padding: 12px 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #219ebc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.updateP-button:hover {
+  background-color: #176e87;
+  transform: translateY(-2px);
+}
+
+.updateP-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .updateP-flex-wrapper {
+    padding: 15px 20px;
+    max-width: 400px;
+  }
+
+  .updateP-heading h2 {
+    font-size: 24px;
+  }
+
+  .updateP-input,
+  .updateP-select,
+  .updateP-textarea {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .updateP-button {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .updateP-flex-wrapper {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .updateP-heading h2 {
+    font-size: 22px;
+  }
+
+  .updateP-input,
+  .updateP-select,
+  .updateP-textarea {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .updateP-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .updateP-heading h2 {
+    font-size: 20px;
+  }
+
+  .updateP-input,
+  .updateP-select,
+  .updateP-textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .updateP-button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}

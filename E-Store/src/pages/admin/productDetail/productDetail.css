@@ -1,0 +1,195 @@
+/* General Wrapper */
+.productD-wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #f8fbfd;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+  border: 1px solid #dde5ec;
+}
+
+/* Header */
+.productD-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.productD-title {
+  font-size: 26px;
+  color: #219ebc;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+  text-align: center;
+}
+
+.productD-addButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #219ebc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.productD-addButton:hover {
+  background-color: #176e87;
+  transform: scale(1.05);
+}
+
+/* Table Wrapper */
+.productD-tableWrapper {
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Table */
+.productD-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.productD-tableHeader {
+  background-color: #219ebc;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.productD-tableData {
+  padding: 10px;
+}
+
+.productD-tableHeaderCell {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #dde5ec;
+  color: #ffffff;
+}
+
+.productD-tableRow:nth-child(odd) {
+  background-color: #f9fcfe;
+}
+
+.productD-tableRow:hover {
+  background-color: #e8f4fa;
+}
+
+.productD-tableCell {
+  padding: 12px 15px;
+  font-size: 15px;
+  color: #495057;
+  border: 1px solid #dde5ec;
+}
+
+/* Image Styling */
+.productD-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Action Buttons */
+.productD-edit,
+.productD-delete {
+  padding: 10px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.productD-edit {
+  background-color: #28a745;
+}
+
+.productD-edit:hover {
+  background-color: #218838;
+}
+
+.productD-delete {
+  background-color: #dc3545;
+}
+
+.productD-delete:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .productD-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .productD-addButton {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .productD-tableHeaderCell,
+  .productD-tableCell {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .productD-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .productD-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .productD-title {
+    font-size: 20px;
+  }
+
+  .productD-addButton {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .productD-tableHeaderCell,
+  .productD-tableCell {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .productD-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .productD-table {
+    font-size: 12px;
+  }
+
+  .productD-tableWrapper {
+    padding: 10px;
+  }
+}

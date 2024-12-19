@@ -1,0 +1,69 @@
+/* General Button Styling */
+.buymodal-button {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+  background-color: #219ebc;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buymodal-button:hover {
+  background-color: #00ccffbb;
+  color: #fff;
+}
+
+/* Dialog Wrapper */
+.buymodal-dialog-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Dialog Box */
+.buymodal-dialog {
+  background-color: #ffe4e6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dialog Body */
+.buymodal-dialog-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Group */
+.buymodal-input-group {
+  margin-bottom: 15px;
+}
+
+/* Input Styling */
+.buymodal-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f8bbd0;
+  border-radius: 5px;
+  outline: none;
+  color: #d81b60;
+}
+
+.buymodal-input::placeholder {
+  color: #f48fb1;
+}
+
+/* Button Group */
+.buymodal-button-group {
+  margin-top: 15px;
+}
