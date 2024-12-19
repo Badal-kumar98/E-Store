@@ -3,7 +3,7 @@ import "./updateproduct.css";
 import MyContext from "../../../context/MyContext";
 import { useNavigate, useParams } from "react-router-dom";
 import { doc, getDoc, setDoc, Timestamp, updateDoc } from "firebase/firestore";
-import { fireDB } from "../../../../../FireBase/FirebaseConfigs";
+import { fireDB } from "../../../FireBase/FirebaseConfigs";
 import { toast } from "react-toastify";
 import Loader from "../../../components/loader/Loader";
 

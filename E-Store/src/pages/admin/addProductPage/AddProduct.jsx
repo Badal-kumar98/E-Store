@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import "./addproduct.css";
 import MyContext from "../../../context/MyContext";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
-import { fireDB } from "../../../../../FireBase/FirebaseConfigs";
+import { fireDB } from "../../../FireBase/FirebaseConfigs";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loader from "../../../components/loader/Loader";

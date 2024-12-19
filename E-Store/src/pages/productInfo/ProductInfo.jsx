@@ -4,7 +4,7 @@ import Layout from "../../components/layout/Layout";
 import MyContext from "../../context/MyContext";
 import { useParams } from "react-router-dom";
 import { doc, getDoc } from "firebase/firestore";
-import { fireDB } from "../../../../FireBase/FirebaseConfigs";
+import { fireDB } from "../../FireBase/FirebaseConfigs";
 import Loader from "../../components/loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, deleteFromCart } from "../../redux/cartSlice";

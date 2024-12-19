@@ -5,7 +5,7 @@ import Layout from "../../components/layout/Layout";
 import MyContext from "../../context/MyContext";
 import { toast } from "react-toastify";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth, fireDB } from "../../../../FireBase/FirebaseConfigs";
+import { auth, fireDB } from "../../FireBase/FirebaseConfigs";
 import { collection, query, where, onSnapshot } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import Loader from "../../components/loader/Loader";

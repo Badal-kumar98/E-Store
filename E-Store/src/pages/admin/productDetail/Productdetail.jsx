@@ -4,7 +4,7 @@ import "./productDetail.css";
 import myContext from "../../../context/MyContext";
 import { FaUserEdit, FaTrashAlt } from "react-icons/fa";
 import { deleteDoc, doc } from "firebase/firestore";
-import { fireDB } from "../../../../../FireBase/FirebaseConfigs";
+import { fireDB } from "../../../FireBase/FirebaseConfigs";
 import { toast } from "react-toastify";
 import Loader from "../../../components/loader/Loader";
 

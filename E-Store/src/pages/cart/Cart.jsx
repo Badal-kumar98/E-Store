@@ -9,7 +9,7 @@ import {
 } from "../../redux/cartSlice";
 import { toast } from "react-toastify";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
-import { fireDB } from "../../../../FireBase/FirebaseConfigs";
+import { fireDB } from "../../FireBase/FirebaseConfigs";
 import { Navigate } from "react-router-dom";
 import BuyNowModal from "../../components/buyNowModal/BuyNowModal";
 
