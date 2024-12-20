@@ -59,7 +59,7 @@
 }
 
 .carts-cart-item {
-  width: 50%;
+  width: 100%;
   display: flex;
   margin-bottom: 20px;
   align-items: flex-start;
@@ -78,7 +78,7 @@
 .carts-item-details {
   display: flex;
   flex-direction: column;
-  min-width: 0; /* Prevent overflow */
+  min-width: 0;
 }
 
 .carts-item-name {
@@ -229,6 +229,15 @@
 
   .carts-item-details {
     font-size: 0.9rem;
+  }
+
+  .carts-cart-item {
+    width: 100%;
+  }
+
+  .carts-item-image {
+    width: 100px;
+    height: auto;
   }
 
   .carts-remove-btn {

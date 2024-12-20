@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./buyNowModal.css";
 import Loader from "../loader/Loader";
+import { RxCross2 } from "react-icons/rx";
 
 const BuyNowModal = ({ addressInfo, setAddressInfo, buyNowHandler }) => {
   const [open, setOpen] = useState(false);
@@ -23,8 +24,16 @@ const BuyNowModal = ({ addressInfo, setAddressInfo, buyNowHandler }) => {
       {open && (
         <div className="buymodal-dialog-wrapper">
           <div className="buymodal-dialog">
+            <div className="buymodal-dialog-header">
+              <button
+                type="button"
+                onClick={() => setOpen(false)}
+                className="buymodal-close-button"
+              >
+                <RxCross2 />
+              </button>
+            </div>
             <div className="buymodal-dialog-body">
-              {/* Input fields for address */}
               <div className="buymodal-input-group">
                 <input
                   type="text"
@@ -76,20 +85,14 @@ const BuyNowModal = ({ addressInfo, setAddressInfo, buyNowHandler }) => {
                   className="buymodal-input"
                 />
               </div>
-
-              {/* Buttons */}
               <div className="buymodal-button-group">
                 <button
                   type="button"
                   onClick={handleBuyNow}
                   className="buymodal-button"
-                  disabled={loading} // Disable button while loading
+                  disabled={loading}
                 >
-                  {loading ? (
-                    <Loader />
-                  ) : (
-                    "Buy now"
-                  )}
+                  {loading ? <Loader /> : "Buy now"}
                 </button>
               </div>
             </div>
