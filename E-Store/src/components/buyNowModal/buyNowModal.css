@@ -1,3 +1,4 @@
+/* General Button Styling */
 .buymodal-button {
   width: 100%;
   padding: 12px;
@@ -14,6 +15,7 @@
   color: #fff;
 }
 
+/* Dialog Wrapper */
 .buymodal-dialog-wrapper {
   position: fixed;
   top: 0;
@@ -27,24 +29,27 @@
   z-index: 1000;
 }
 
+/* Dialog Box */
 .buymodal-dialog {
   background-color: #ffe4e6;
   padding: 20px;
   border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
+  width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Dialog Body */
 .buymodal-dialog-body {
   display: flex;
   flex-direction: column;
 }
 
+/* Input Group */
 .buymodal-input-group {
   margin-bottom: 15px;
 }
 
+/* Input Styling */
 .buymodal-input {
   width: 100%;
   padding: 10px;
@@ -58,64 +63,7 @@
   color: #f48fb1;
 }
 
+/* Button Group */
 .buymodal-button-group {
   margin-top: 15px;
-}
-
-.buymodal-dialog-header {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.buymodal-close-button {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  color: #333;
-}
-
-.buymodal-close-button:hover {
-  color: #ff0000;
-}
-
-@media (max-width: 768px) {
-  .buymodal-dialog {
-    width: 95%;
-    padding: 15px;
-  }
-
-  .buymodal-button {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-
-  .buymodal-input {
-    padding: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .buymodal-dialog {
-    width: 100%;
-    border-radius: 0;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-  }
-
-  .buymodal-button {
-    padding: 8px;
-    font-size: 0.85rem;
-  }
-
-  .buymodal-input {
-    padding: 6px;
-    font-size: 0.9rem;
-  }
-
-  .buymodal-close-button {
-    font-size: 1.2rem;
-  }
 }
